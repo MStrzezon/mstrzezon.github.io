@@ -1,37 +1,8 @@
-## Welcome to GitHub Pages
+## About me!
+I am studying Computer Science at [AGH- University of Science and Technology](https://www.agh.edu.pl/). Currently I am working on Physicist's Toolbox with my team and I am learning a lot of useful skills.
 
-You can use the [editor on GitHub](https://github.com/MStrzezon/Mstrzezon.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+In my free time, I am [playing football](https://www.laczynaspilka.pl/zawodnik-sezon/michal-strzezon,2020-2021,849671.html) at the soccer club, watching football games and meeting with my friends!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Contact
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MStrzezon/Mstrzezon.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+mstrzezon@student.agh.edu.pl
