@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    /* CSS Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Layout Structure */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .main-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: white;
+      min-height: 100vh;
+    }
+    
+    /* Header & Navigation */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e1e5e9;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    
+    .site-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #2c3e50;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .site-nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    .nav-link {
+      text-decoration: none;
+      color: #6c757d;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-link:hover {
+      color: #667eea;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #667eea;
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    /* Typography */
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+      line-height: 1.2;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1.5rem 0;
+      color: #2c3e50;
+      line-height: 1.3;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem 0;
+      color: #34495e;
+    }
+    
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.75rem 0;
+      color: #34495e;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #4a5568;
+    }
+    
+    /* Links */
+    a {
+      color: #667eea;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      color: #5a6fd8;
+      text-decoration: underline;
+    }
+    
+    /* Lists */
+    ul, ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    
+    /* Code */
+    code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      border: 1px solid #e9ecef;
+    }
+    
+    pre {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border: 1px solid #e9ecef;
+    }
+    
+    pre code {
+      background: none;
+      padding: 0;
+      border: none;
+    }
+    
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    
+    th, td {
+      border: 1px solid #e9ecef;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    th {
+      background: #f8f9fa;
+      font-weight: 600;
+    }
+    
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    
+    /* Blockquotes */
+    blockquote {
+      border-left: 4px solid #667eea;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: #6c757d;
+      background: #f8f9fa;
+      padding: 1rem 1.5rem;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    /* HR */
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e1e5e9, transparent);
+      margin: 3rem 0;
+    }
+    
+    /* Footer */
+    .site-footer {
+      background: #f8f9fa;
+      border-top: 1px solid #e1e5e9;
+      margin-top: 4rem;
+      padding: 2rem 0;
+      text-align: center;
+      color: #6c757d;
+    }
+    
+    /* Mobile Navigation */
+    .mobile-nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #2c3e50;
+      cursor: pointer;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1rem;
+      }
+      
+      .main-content {
+        padding: 1rem;
+      }
+      
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .site-nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+      }
+      
+      .mobile-nav-toggle {
+        display: block;
+      }
+      
+      .site-nav {
+        display: none;
+      }
+      
+      .site-nav.active {
+        display: flex;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.75rem;
+      }
+      
+      h3 {
+        font-size: 1.3rem;
+      }
+      
+      .hero-section {
+        padding: 2rem 1rem !important;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    /* Print Styles */
+    @media print {
+      .site-header,
+      .site-footer,
+      .hero-buttons,
+      .contact-links {
+        display: none;
+      }
+      
+      .main-content {
+        max-width: none;
+        padding: 0;
+      }
+      
+      * {
+        background: white !important;
+        color: black !important;
+      }
+    }
+    
+    /* Focus States for Accessibility */
+    a:focus,
+    button:focus {
+      outline: 2px solid #667eea;
+      outline-offset: 2px;
+    }
+    
+    /* Smooth Animations */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Loading State */
+    .loading {
+      opacity: 0.7;
+      pointer-events: none;
+    }
+    
+    /* High Contrast Mode Support */
+    @media (prefers-contrast: high) {
+      body {
+        background: white;
+        color: black;
+      }
+      
+      .hero-section {
+        background: black !important;
+        color: white !important;
+      }
+    }
+    
+    /* Reduced Motion Support */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="{{ '/' | relative_url }}" class="site-title">
+          <i class="fas fa-code"></i> Michał Strzeżoń
+        </a>
+        
+        <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="site-nav" id="siteNav">
+          <a href="{{ '/' | relative_url }}" class="nav-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+          <a href="{{ '/projects/' | relative_url }}" class="nav-link">
+            <i class="fas fa-folder-open"></i> Projects
+          </a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-link">
+            <i class="fas fa-user"></i> About Me
+          </a>
+          <a href="mailto:michal.m.strzezon@gmail.com" class="nav-link">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+          <a href="https://github.com/mstrzezon" target="_blank" class="nav-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content fade-in">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <i class="fas fa-heart" style="color: #e74c3c;"></i> 
+        Built with Jekyll & GitHub Pages | 
+        © {{ 'now' | date: "%Y" }} Michał Strzeżoń
+      </p>
+      <p>
+        <small>
+          <i class="fas fa-graduation-cap"></i> 
+          Computer Science Graduate from 
+          <a href="https://www.agh.edu.pl/" target="_blank">AGH University</a>
+          • Software Engineer & Data Analytics Specialist
+        </small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Navigation -->
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('siteNav');
+      const toggle = document.querySelector('.mobile-nav-toggle i');
+      
+      nav.classList.toggle('active');
+      
+      if (nav.classList.contains('active')) {
+        toggle.className = 'fas fa-times';
+      } else {
+        toggle.className = 'fas fa-bars';
+      }
+    }
+    
+    // Close mobile nav when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('siteNav').classList.remove('active');
+        document.querySelector('.mobile-nav-toggle i').className = 'fas fa-bars';
+      });
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Add loading state to external links
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+      link.addEventListener('click', function() {
+        this.classList.add('loading');
+        setTimeout(() => {
+          this.classList.remove('loading');
+        }, 2000);
+      });
+    });
+    
+    // Fade in animation for elements
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all sections for animation
+    document.querySelectorAll('section, .project-card, .skill-category').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

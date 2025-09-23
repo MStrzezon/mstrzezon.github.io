@@ -1,77 +1,142 @@
----
-layout: default
----
+## 💻 About Me {#about}
 
-<div class="hero-section">
-  <h1>👋 Hello, I'm Michał Strzeżoń</h1>
-  <p class="hero-subtitle">Software Engineer with AI/ML knowledge</p>
-</div>
+I'm a Software Engineer with scientific background in Artificial Intelligence and Data Analysis. My areas of interest:
 
----
+- **🖥️ Backend Development**
+- **🛩️ Aviation Analytics**
+- **🤖 Artificial Intelligence & Machine Learning**
 
-## 🚀 Featured Projects
+### 💼 Experience
 
-<div class="projects-grid">
+<div class="education-timeline">
   
-  <div class="project-card">
-    <div class="project-header">
-      <h3>✈️ Flylytics</h3>
-      <div class="project-status">🚧 In Development</div>
+  <div class="education-item">
+    <div class="education-header">
+      <h4>💻 Software Backend Engineer</h4>
+      <span class="education-period">September 2022 - Now</span>
     </div>
-    <p>Advanced ADS-B trajectory analysis platform for aviation data visualization and analytics.</p>
-    <div class="tech-stack">
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">Streamlit</span>
-      <span class="tech-tag">Plotly</span>
-      <span class="tech-tag">GeoPandas</span>
-    </div>
-    <div class="project-links">
-      <a href="https://github.com/mstrzezon/flylytics" target="_blank">GitHub</a>
-      <a href="/projects/flylytics">Learn More</a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <h3>🔬 Physicist's Toolbox</h3>
-      <div class="project-status completed">✅ Completed</div>
-    </div>
-    <p>Intuitive physics calculation app covering kinematics, dynamics, thermodynamics, and more.</p>
-    <div class="tech-stack">
-      <span class="tech-tag">Physics</span>
-      <span class="tech-tag">Mathematics</span>
-      <span class="tech-tag">Educational</span>
-    </div>
-    <div class="project-links">
-      <a href="/projects/physicist-toolbox">Learn More</a>
+    <div class="education-institution">Comarch</div>
+    <div class="education-details">
+      <div class="education-row">
+        <span class="label">Role:</span>
+        <span class="value">Developing part of a large-scale Operations Support System (OSS) composed of domain-oriented microservices</span>
+      </div>
+      <div class="education-row">
+        <span class="label">Technology Stack:</span>
+        <span class="value">Java 11+, Quarkus, REST, GraphQL, Hibernate, PostgreSQL, Kafka, Redis, Maven, GitLab, Git, Docker, ElasticSearch, Kubernetes, Python, Google ADK</span>
+      </div>
     </div>
   </div>
 
+  <div class="education-item">
+    <div class="education-header">
+      <h4>👨‍💻 Software Backend Engineer Intern</h4>
+      <span class="education-period">July 2022 - September 2022</span>
+    </div>
+    <div class="education-institution">Comarch</div>
+    <div class="education-details">
+      <div class="education-row">
+        <span class="label">Role:</span>
+        <span class="value">Backend development internship focused on learning enterprise-level software development practices</span>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+### 🎓 Education
+
+<div class="education-timeline">
+  
+  <div class="education-item">
+    <div class="education-header">
+      <h4>🎓 Master of Science in Computer Science and Intelligent Systems</h4>
+      <span class="education-period">February 2024 - September 2025</span>
+    </div>
+    <div class="education-institution">AGH University of Science and Technology</div>
+    <div class="education-details">
+      <div class="education-row">
+        <span class="label">Specialization:</span>
+        <span class="value">Artificial Intelligence and Data Analysis</span>
+      </div>
+      <div class="education-row">
+        <span class="label">Grade:</span>
+        <span class="value grade-excellent">5.0 / 5.0</span>
+      </div>
+      <div class="education-row">
+        <span class="label">Master's Thesis:</span>
+        <span class="value">"Anomaly Detection in Flight Data from OpenSky Network"</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="education-item">
+    <div class="education-header">
+      <h4>🎓 Bachelor of Science in Computer Science and Intelligent Systems</h4>
+      <span class="education-period">October 2020 - February 2024</span>
+    </div>
+    <div class="education-institution">AGH University of Science and Technology</div>
+    <div class="education-details">
+      <div class="education-row">
+        <span class="label">Grade:</span>
+        <span class="value grade-excellent">5.0 / 5.0</span>
+      </div>
+      <div class="education-row">
+        <span class="label">Bachelor's Thesis:</span>
+        <span class="value">"Sports Club Management System"</span>
+      </div>
+      <div class="education-row">
+        <span class="label">Research Groups:</span>
+        <span class="value">
+          <span class="research-group">Industrial Data Science</span>
+          <span class="research-group">AGH Blockchain</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+### 🏈 Beyond Code
+When I'm not developing software, you'll find me:
+- ⚽ Playing football at my local club
+- ⛷️ Skiing in the slopes and hiking
+- 📺 Following European football leagues (especially LaLiga!)
 
 ---
 
-## 📬 Get In Touch
+## 📈 Technical Skills
 
-I'm always interested in discussing new opportunities, collaboration projects, or just chatting about technology and aviation analytics!
-
-<div class="contact-links">
-  <a href="mailto:michal.m.strzezon@gmail.com" class="contact-btn">
-    📧 Email Me
-  </a>
-  <a href="https://github.com/mstrzezon" target="_blank" class="contact-btn">
-    🐙 GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/micha%C5%82-strze%C5%BCo%C5%84-a6128a223/" target="_blank" class="contact-btn">
-    💼 LinkedIn
-  </a>
-</div>
-
----
-
-<div class="footer">
-  <p>© 2025 Michał Strzeżoń • Built with Jekyll & ❤️</p>
-</div>
+<div class="skills-grid">
+    <div class="skill-category">
+        <h4>🎯 Core Skills</h4>
+        <ul>
+            <li><strong>Java</strong></li>
+            <li><strong>SQL</strong></li>
+            <li><strong>Git</strong></li>
+            <li><strong>GraphQL</strong></li>
+            <li><strong>Maven</strong></li>
+            <li><strong>Python</strong></li>
+        </ul>
+    </div>
+    
+    <div class="skill-category">
+        <h4>🧩 Basic Knowledge</h4>
+        <ul>
+            <li><strong>Quarkus</strong></li>
+            <li><strong>Hibernate</strong></li>
+            <li><strong>Kafka</strong></li>
+            <li><strong>Redis</strong></li>
+            <li><strong>Docker</strong></li>
+            <li><strong>ElasticSearch</strong></li>
+            <li><strong>Neo4j</strong></li>
+            <li><strong>TensorFlow/PyTorch</strong></li>
+            <li><strong>Google ADK</strong></li>
+            <li><strong>HTML, CSS, JavaScript</strong></li>
+        </ul>
+    </div>
+  
 
 <style>
 /* Custom Styles for Homepage */
