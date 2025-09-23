@@ -33,6 +33,60 @@ layout: default
 
   <div class="project-card">
     <div class="project-header">
+      <h3>⚽ QuickMatch</h3>
+      <div class="project-status completed">✅ Completed</div>
+    </div>
+    <p>Full-stack web application for organizing football matches with real-time booking system and user management.</p>
+    <div class="tech-stack">
+      <span class="tech-tag">Django</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">REST API</span>
+      <span class="tech-tag">MySQL</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/TripleM-MMM/QuickMatch" target="_blank">GitHub</a>
+      <a href="/projects/quickmatch">Learn More</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>🃏 Socket Poker Game</h3>
+      <div class="project-status completed">✅ Completed</div>
+    </div>
+    <p>Multi-player poker game with client-server architecture, socket communication and comprehensive game protocol.</p>
+    <div class="tech-stack">
+      <span class="tech-tag">Java</span>
+      <span class="tech-tag">Sockets</span>
+      <span class="tech-tag">Maven</span>
+      <span class="tech-tag">OOP</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/mstrzezon/Poker" target="_blank">GitHub</a>
+      <a href="/projects/poker">Learn More</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>📄 JPK Generator</h3>
+      <div class="project-status completed">✅ Completed</div>
+    </div>
+    <p>Java tool for converting Excel/CSV files to JPK XML format for Polish tax reporting compliance.</p>
+    <div class="tech-stack">
+      <span class="tech-tag">Java</span>
+      <span class="tech-tag">JAXB</span>
+      <span class="tech-tag">Apache POI</span>
+      <span class="tech-tag">XML</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/mstrzezon/generator_jpk" target="_blank">GitHub</a>
+      <a href="/projects/jpk-generator">Learn More</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
       <h3>🔬 Physicist's Toolbox</h3>
       <div class="project-status completed">✅ Completed</div>
     </div>

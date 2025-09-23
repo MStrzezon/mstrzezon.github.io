@@ -10,8 +10,6 @@ Welcome to my project portfolio! Here you'll find a collection of applications a
 
 ---
 
-## Featured Projects
-
 <div class="projects-showcase">
 
 ### ✈️ [Flylytics](./flylytics/)
@@ -27,7 +25,46 @@ Advanced web application for analyzing aircraft trajectories from ADS-B data, fe
 
 ---
 
-### 🔬 [Physicist's Toolbox](./physicist-toolbox/)
+### ⚽ [QuickMatch](./quickmatch/)
+**Football Match Organizer**
+
+Full-stack web application for organizing football matches with real-time booking system, user management, and interactive match details.
+
+- **Status**: ✅ Completed
+- **Tech Stack**: Django, React, REST API, MySQL
+- **Focus**: Web Development, Full-Stack Architecture
+
+[Learn More →](./quickmatch/) | [GitHub](https://github.com/TripleM-MMM/QuickMatch)
+
+---
+
+### 🃏 [Socket Poker Game](./poker/)
+**Multiplayer Card Game**
+
+Multi-player poker game with client-server architecture, socket communication and comprehensive game protocol implementation.
+
+- **Status**: ✅ Completed
+- **Tech Stack**: Java, Sockets, Maven, OOP
+- **Focus**: Network Programming, Game Development
+
+[Learn More →](./poker/) | [GitHub](https://github.com/mstrzezon/Poker)
+
+---
+
+### � [JPK Generator](./jpk-generator/)
+**File Format Converter**
+
+Java tool for converting Excel/CSV files to JPK XML format required for Polish tax reporting compliance and government submissions.
+
+- **Status**: ✅ Completed
+- **Tech Stack**: Java, JAXB, Apache POI, XML
+- **Focus**: Data Conversion, Government Compliance
+
+[Learn More →](./jpk-generator/) | [GitHub](https://github.com/mstrzezon/generator_jpk)
+
+---
+
+### �🔬 [Physicist's Toolbox](./physicist-toolbox/)
 **Comprehensive Physics Calculator**
 
 Educational application covering six major physics domains with intuitive interface for students and educators.
@@ -38,122 +75,6 @@ Educational application covering six major physics domains with intuitive interf
 
 [Learn More →](./physicist-toolbox/) | [GitHub](https://github.com/mstrzezon/physicist-toolbox)
 
-</div>
-
----
-
-## Project Categories
-
-### 🛩️ **Data Analytics & Visualization**
-Projects focused on extracting insights from complex datasets and creating meaningful visualizations.
-
-- **Flylytics**: Aviation trajectory analysis and flight data visualization
-- *More analytics projects coming soon...*
-
-### 🎓 **Educational Tools**
-Applications designed to enhance learning and teaching experiences.
-
-- **Physicist's Toolbox**: Comprehensive physics calculation suite
-- *Additional educational tools in development...*
-
-### 🔬 **Research & Experimentation**
-Experimental projects and research initiatives exploring new technologies and methodologies.
-
-- *Research projects documentation coming soon...*
-
----
-
-## Development Philosophy
-
-My approach to project development focuses on:
-
-### 🎯 **User-Centered Design**
-- Intuitive interfaces that prioritize user experience
-- Clear documentation and helpful error messages
-- Accessibility considerations for diverse users
-
-### 🔧 **Technical Excellence**
-- Clean, maintainable code architecture
-- Comprehensive testing and validation
-- Performance optimization and scalability
-
-### 📚 **Educational Value**
-- Projects that solve real-world problems
-- Open-source contributions to benefit the community
-- Knowledge sharing through documentation
-
-### 🌱 **Continuous Improvement**
-- Regular updates and feature enhancements
-- Community feedback integration
-- Technology stack modernization
-
----
-
-## Technologies I Work With
-
-<div class="tech-categories">
-
-### **Programming Languages**
-- **Python** - Primary language for data analysis and web applications
-- **JavaScript** - Web development and interactive features
-- **SQL** - Database queries and data manipulation
-
-### **Data Science & Analytics**
-- **Pandas, NumPy** - Data manipulation and numerical computing
-- **Plotly, Matplotlib** - Data visualization and charting
-- **GeoPandas** - Geospatial data analysis
-- **SciPy** - Scientific computing and statistics
-
-### **Web Development**
-- **Streamlit** - Rapid web application development
-- **HTML/CSS** - Frontend development and styling
-- **Jekyll** - Static site generation (this website!)
-
-### **Tools & Platforms**
-- **Git** - Version control and collaboration
-- **GitHub** - Code hosting and project management
-- **Docker** - Application containerization
-- **VS Code** - Primary development environment
-
-</div>
-
----
-
-## Get Involved
-
-I'm always excited to collaborate on interesting projects or discuss new ideas!
-
-### 🤝 **Collaboration Opportunities**
-- **Open Source Contributions**: Most projects welcome community contributions
-- **Research Partnerships**: Academic or professional research collaborations
-- **Mentoring**: Helping other students and junior developers
-- **Consulting**: Technical advice and project guidance
-
-### 💡 **Project Ideas**
-Have an interesting project idea? I'm particularly interested in:
-- **Aviation & Transportation Analytics**
-- **Educational Technology Applications**
-- **Data Visualization & Interactive Tools**
-- **Scientific Computing & Simulation**
-
-### 📬 **Contact Information**
-- **Email**: [michal.m.strzezon@gmail.com](mailto:michal.m.strzezon@gmail.com)
-- **GitHub**: [@mstrzezon](https://github.com/mstrzezon)
-- **LinkedIn**: [mstrzezon](https://linkedin.com/in/mstrzezon)
-
----
-
-<div class="projects-footer">
-  <p>
-    <strong>🔄 Regular Updates</strong><br>
-    This portfolio is regularly updated with new projects and enhancements. 
-    Check back frequently to see the latest developments!
-  </p>
-  
-  <div class="footer-actions">
-    <a href="/" class="btn btn-outline">← Back to Home</a>
-    <a href="mailto:michal.m.strzezon@gmail.com" class="btn btn-primary">Get in Touch</a>
-  </div>
 </div>
 
 <style>
