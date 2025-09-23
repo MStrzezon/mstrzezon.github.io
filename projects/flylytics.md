@@ -43,7 +43,7 @@ Users can analyze trajectories of loaded traffic:
 
 ## Status
 
-Flylytics is currently in active development and code is not published yet. New features and improvements are being added regularly. Feedback and contributions from the community are welcome!
+Flylytics is currently in active development. New features and improvements are being added regularly. Feedback and contributions from the community are welcome!
 
 
 <style>
