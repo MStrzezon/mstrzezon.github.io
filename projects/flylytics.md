@@ -16,6 +16,36 @@ permalink: /projects/flylytics/
 
 Flylytics is a web application designed for analyzing aircraft trajectories from ADS-B (Automatic Dependent Surveillance-Broadcast) data. Built with Streamlit, it provides aviation enthusiasts, researchers, and professionals with powerful tools for flight data visualization and analysis.
 
+### Data Management
+
+Users can upload their own ADS-B data files in CSV, JSON, or Parquet formats that are traffic object from the library [traffic](https://github.com/xoolive/traffic)
+![Flylytics Screenshot](/assets/images/upload_data.png)
+
+### Analytics Dashboard
+
+Users can explore various analytics features, including:
+- **Trajectories Filtering**: Filter flights by date, time, weekday, airline, aircraft type, and more.
+![Flylytics Screenshot](/assets/images/analytics_dashboard_filters.png)
+- **Statistical Visualizations**: View histograms of flight dates distribution, aircraft types, airlines, and other key metrics.
+![Flylytics Screenshot](/assets/images/analytics_dashboard_stats.png)
+
+### Trajectory Analysis
+
+Users can analyze trajectories of loaded traffic:
+- **2D Visualization**: Interactive 2D maps displaying flight paths. Trajectories can be colored by hour of the day, altitude, speed, callsign, weekday, or aircraft type.
+![Flylytics Screenshot](/assets/images/trajectory_analysis_2d.png)
+- **Flight parameters plots**: Plots of altitude, speed, and vertical rate over time.
+![Flylytics Screenshot](/assets/images/trajectory_analysis_params.png)
+- **Comparison of multiple trajectories parameters**: Compare altitude, speed, and vertical rate of multiple flights on the same plot.
+![Flylytics Screenshot](/assets/images/trajectory_analysis_compare.png)
+- **Individual flight details**: View detailed information about individual flights.
+![Flylytics Screenshot](/assets/images/trajectory_analysis_flight_details.png)
+
+## Status
+
+Flylytics is currently in active development and code is not published yet. New features and improvements are being added regularly. Feedback and contributions from the community are welcome!
+
+
 <style>
 .project-hero {
   text-align: center;
