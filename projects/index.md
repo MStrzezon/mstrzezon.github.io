@@ -6,39 +6,38 @@ permalink: /projects/
 
 # 🚀 My Projects
 
-Welcome to my project portfolio! Here you'll find a collection of applications and tools I've developed, ranging from aviation data analytics to educational physics tools.
+Welcome to my project portfolio! Here you'll find a collection of applications and tools I've developed, ranging from web applications to AI/ML projects.
 
 ---
-
-<div class="projects-showcase">
 
 ### ✈️ [Flylytics](./flylytics/)
 **ADS-B Trajectory Analysis Platform**
 
-Advanced web application for analyzing aircraft trajectories from ADS-B data, featuring interactive visualizations and comprehensive analytics.
+Web application for analyzing aircraft trajectories from ADS-B data, featuring interactive visualizations and comprehensive analytics.
 
 - **Status**: 🚧 In Active Development
-- **Tech Stack**: Python, Streamlit, Plotly, GeoPandas
+- **Tech Stack**: Python, Streamlit, Plotly, Traffic
 - **Focus**: Aviation Data Analytics, Geospatial Analysis
 
 [Learn More →](./flylytics/) | [GitHub](https://github.com/mstrzezon/flylytics) | [Live Demo](https://flylytics.streamlit.app)
 
 ---
 
-### ⚽ [QuickMatch](./quickmatch/)
+### ⚽ [QuickMatch](https://github.com/TripleM-MMM/QuickMatch)
 **Football Match Organizer**
 
-Full-stack web application for organizing football matches with real-time booking system, user management, and interactive match details.
+Full-stack web application prototype for organizing football matches with real-time booking system, user management, and interactive match details. 
 
 - **Status**: ✅ Completed
 - **Tech Stack**: Django, React, REST API, MySQL
 - **Focus**: Web Development, Full-Stack Architecture
+- **Collaborators**: [Aleksander Mazur](https://github.com/Aleksander2a), [Marcin Retajczyk](https://github.com/RETAJD)
 
-[Learn More →](./quickmatch/) | [GitHub](https://github.com/TripleM-MMM/QuickMatch)
+[GitHub](https://github.com/TripleM-MMM/QuickMatch)
 
 ---
 
-### 🃏 [Socket Poker Game](./poker/)
+### 🃏 [Socket Poker Game](https://github.com/mstrzezon/Poker)
 **Multiplayer Card Game**
 
 Multi-player poker game with client-server architecture, socket communication and comprehensive game protocol implementation.
@@ -47,11 +46,11 @@ Multi-player poker game with client-server architecture, socket communication an
 - **Tech Stack**: Java, Sockets, Maven, OOP
 - **Focus**: Network Programming, Game Development
 
-[Learn More →](./poker/) | [GitHub](https://github.com/mstrzezon/Poker)
+[GitHub](https://github.com/mstrzezon/Poker)
 
 ---
 
-### � [JPK Generator](./jpk-generator/)
+### 📊 [JPK Generator](https://github.com/mstrzezon/generator_jpk)
 **File Format Converter**
 
 Java tool for converting Excel/CSV files to JPK XML format required for Polish tax reporting compliance and government submissions.
@@ -60,22 +59,7 @@ Java tool for converting Excel/CSV files to JPK XML format required for Polish t
 - **Tech Stack**: Java, JAXB, Apache POI, XML
 - **Focus**: Data Conversion, Government Compliance
 
-[Learn More →](./jpk-generator/) | [GitHub](https://github.com/mstrzezon/generator_jpk)
-
----
-
-### �🔬 [Physicist's Toolbox](./physicist-toolbox/)
-**Comprehensive Physics Calculator**
-
-Educational application covering six major physics domains with intuitive interface for students and educators.
-
-- **Status**: ✅ Completed
-- **Tech Stack**: Python, NumPy, SciPy
-- **Focus**: Educational Tools, Physics Calculations
-
-[Learn More →](./physicist-toolbox/) | [GitHub](https://github.com/mstrzezon/physicist-toolbox)
-
-</div>
+[GitHub](https://github.com/mstrzezon/generator_jpk)
 
 <style>
 .projects-showcase {
