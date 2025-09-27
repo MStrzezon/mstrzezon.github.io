@@ -15,7 +15,7 @@ Welcome to my project portfolio! Here you'll find a collection of applications a
 
 Web application for analyzing aircraft trajectories from ADS-B data, featuring interactive visualizations and comprehensive analytics.
 
-- **Status**: 🚧 In Active Development
+- **Status**: 🚢 MVP
 - **Tech Stack**: Python, Streamlit, Plotly, Traffic
 - **Focus**: Aviation Data Analytics, Geospatial Analysis
 

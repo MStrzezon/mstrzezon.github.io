@@ -7,7 +7,7 @@ permalink: /projects/flylytics/
 <div class="project-hero">
   <h1>✈️ Flylytics</h1>
   <p class="project-subtitle">Advanced ADS-B Trajectory Analysis Platform</p>
-  <div class="project-status-badge">🚧 In Active Development</div>
+  <div class="project-status-badge">🚢 MVP</div>
 </div>
 
 ---
@@ -43,7 +43,7 @@ Users can analyze trajectories of loaded traffic:
 
 ## Status
 
-Flylytics is currently in active development. New features and improvements are being added regularly. Feedback and contributions from the community are welcome!
+Flylytics has reached MVP status with core functionality complete. The platform provides comprehensive ADS-B trajectory analysis capabilities and is ready for use. Feedback and contributions from the community are welcome!
 
 
 <style>

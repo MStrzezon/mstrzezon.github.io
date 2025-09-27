@@ -16,7 +16,7 @@ layout: default
   <div class="project-card">
     <div class="project-header">
       <h3>✈️ Flylytics</h3>
-      <div class="project-status">🚧 In Development</div>
+      <div class="project-status">🚢 MVP</div>
     </div>
     <p>Advanced ADS-B trajectory analysis platform for aviation data visualization and analytics.</p>
     <div class="tech-stack">
